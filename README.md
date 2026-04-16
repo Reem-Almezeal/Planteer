@@ -20,6 +20,7 @@
 - For the images, backgrounds, fonts you can use whatever you like. As for the content like categories,  make sure you add real plants with real plants images.
 - Use at least 2 apps, one main and one for the plants.
 - In Plant detail page , Add related plants (based on the same category, use filter !)
+- Do frontend and backend validation. 
   
 ## wireframe for the main pages
 <img width="1771" style="width:100%" alt="Screenshot 2024-03-19 at 2 27 18 PM" src="assets/main-wireframe.png">
