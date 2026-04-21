@@ -25,7 +25,7 @@
             </div>
         </div>
 
-    <form method="get" action="{% url 'search_plants' %}" class="plants-filters-card">
+    <form method="get" action="{% url 'plants:search_plants' %}" class="plants-filters-card">
         <div class="plants-filters-grid">
 
             <div class="filter-field search-field">
@@ -68,13 +68,13 @@
                 <button
                     type="submit"
                     class="planteer-btn"
-                    formaction="{% url 'search_plants' %}"
+                    formaction="{% url 'plants:search_plants' %}"
                     onclick="return handlePlantSearch(event)"
                 >
                     {% trans "Search" %}
                 </button>
 
-                <a href="{% url 'all_plants' %}" class="clear-filters-btn">
+                <a href="{% url 'plants:all_plants' %}" class="clear-filters-btn">
                     {% trans "Cancel" %}
                 </a>
             </div>
@@ -88,7 +88,7 @@
         </div>
 
         {% if user.is_staff %}
-            <a href="{% url 'plant_create' %}" class="planteer-btn">
+            <a href="{% url 'plants:plant_create' %}" class="planteer-btn">
                 {% trans "Add New Plant" %}
             </a>
         {% endif %}
@@ -129,7 +129,7 @@
                                 <span>{% trans "Water" %}: {{ plant.watering }}</span>
                             {% endif %}
                         </div><div class="plant-actions">
-                            <a href="{% url 'plant_detail' plant.id %}" class="planteer-btn-outline">
+                            <a href="{% url 'plants:plant_detail' plant.id %}" class="planteer-btn-outline">
                                 {% trans "View Details" %}
                             </a>
                         </div>

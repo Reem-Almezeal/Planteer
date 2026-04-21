@@ -680,8 +680,6 @@ msgid "Unknown"
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:870
-msgid "Yes"
-msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:871
 msgid "No"
@@ -1566,9 +1564,6 @@ msgstr "تُستخدم لـ"
 msgid "Light Requirement"
 msgstr "احتياج الإضاءة"
 
-msgid "Watering"
-msgstr "الري"
-
 msgid "Edible"
 msgstr "صالحة للأكل"
 
@@ -1827,3 +1822,76 @@ msgstr "اكتشف النباتات وابحث عنها وقارن بينها و
 
 msgid "Coming Soon"
 msgstr "قريبًا"
+
+msgid "Smart Plant Finder"
+msgstr "الباحث الذكي عن النباتات"
+
+msgid "Answer a few simple questions and we will suggest the best plants for you."
+msgstr "أجب عن بعض الأسئلة البسيطة وسنقترح لك أفضل النباتات."
+
+msgid "Light Level"
+msgstr "مستوى الإضاءة"
+
+msgid "Choose light level"
+msgstr "اختر مستوى الإضاءة"
+
+msgid "Low Light"
+msgstr "إضاءة منخفضة"
+
+msgid "Medium Light"
+msgstr "إضاءة متوسطة"
+
+msgid "Bright Light"
+msgstr "إضاءة ساطعة"
+
+msgid "Watering"
+msgstr "الري"
+
+msgid "Choose watering frequency"
+msgstr "اختر معدل الري"
+
+msgid "Rarely"
+msgstr "نادراً"
+
+msgid "Sometimes"
+msgstr "أحياناً"
+
+msgid "Frequently"
+msgstr "بشكل متكرر"
+
+msgid "Edible Plant?"
+msgstr "نبتة صالحة للأكل؟"
+
+msgid "No preference"
+msgstr "لا يهم"
+
+msgid "Yes"
+msgstr "نعم"
+
+
+msgid "Room Size"
+msgstr "حجم الغرفة"
+
+msgid "Choose room size"
+msgstr "اختر حجم الغرفة"
+
+msgid "Small Space"
+msgstr "مساحة صغيرة"
+
+msgid "Large Space"
+msgstr "مساحة كبيرة"
+
+msgid "Find My Plant"
+msgstr "اعثر على نبتتي"
+
+msgid "Reset"
+msgstr "إعادة ضبط"
+
+msgid "Suggested Plants"
+msgstr "النباتات المقترحة"
+
+msgid "No matching plants found"
+msgstr "لم يتم العثور على نباتات مطابقة"
+
+msgid "Try changing your answers and search again."
+msgstr "جرّب تغيير إجاباتك ثم ابحث مرة أخرى."

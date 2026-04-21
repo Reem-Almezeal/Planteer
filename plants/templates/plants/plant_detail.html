@@ -13,7 +13,7 @@
     <div class="container">
 
         <div class="plant-detail-topbar">
-            <a href="{% url 'all_plants' %}" class="back-link">
+            <a href="{% url 'plants:all_plants' %}" class="back-link">
                 {% trans "Back to Plants" %}
             </a>
         </div>
@@ -91,7 +91,7 @@
             </div>
                 {% if user.is_staff %}
                 <div class="plant-detail-actions">
-                    <a href="{% url 'plant_update' plant.id %}" class="planteer-btn">
+                    <a href="{% url 'plants:plant_update' plant.id %}" class="planteer-btn">
                         {% trans "Edit Plant" %}
                     </a>
 
@@ -112,7 +112,7 @@
                         </p>
 
                 <div class="delete-modal-actions">
-                    <form method="POST" action="{% url 'plant_delete' plant.id %}" class="delete-form">
+                    <form method="POST" action="{% url 'plants:plant_delete' plant.id %}" class="delete-form">
                         {% csrf_token %}
                         <button type="submit" class="confirm-delete-btn">
                             Delete
@@ -181,7 +181,7 @@
 
                         <p>{{ related.about|truncatewords:10 }}</p>
 
-                        <a href="{% url 'plant_detail' related.id %}" class="related-plant-btn">
+                        <a href="{% url 'plants:plant_detail' related.id %}" class="related-plant-btn">
                             {% trans "View Details" %}
                         </a>
                     </div>

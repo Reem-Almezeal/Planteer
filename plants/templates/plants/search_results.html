@@ -16,7 +16,7 @@
                 </p>
             {% endif %}
         </div>
-        <form action="{% url 'search_plants' %}" method="GET" class="plants-search-form">
+        <form action="{% url 'plants:search_plants' %}" method="GET" class="plants-search-form">
             <input
                 type="text"
                 name="q"
@@ -37,7 +37,7 @@
                         <h3>{{ plant.name }}</h3>
                         <p>{{ plant.about|truncatewords:14 }}</p>
 
-                        <a href="{% url 'plant_detail' plant.id %}" class="planteer-btn">
+                        <a href="{% url 'plants:plant_detail' plant.id %}" class="planteer-btn">
                             {% trans "View Details" %}
                         </a>
                     </div>

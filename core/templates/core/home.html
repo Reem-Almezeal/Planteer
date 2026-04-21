@@ -20,10 +20,6 @@
 
     <div class="container">
         <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-            <span class="hero-kicker">
-                {% trans "Smart Botanical Experience" %}
-            </span>
-
             <h1>
                 {% trans "Discover the right plant for the right space" %}
             </h1>
@@ -73,7 +69,7 @@
                 </a>
             </div>
             <div class="about-visual" data-aos="fade-left" data-aos-duration="1000">
-                <a href="{% url 'all_plants' %}" class="about-image-card about-link-card">
+                <a href="{% url 'plants:all_plants' %}" class="about-image-card about-link-card">
                     <img src="{% static 'images/main_plant.png' %}" alt="{% trans 'Plant Experience' %}">
 
                     <div class="about-image-overlay">
@@ -114,7 +110,7 @@
 
 <!-- PLANT OF THE DAY SECTION -->
 <section class="home-section plant-day-section" id="plant-day">
-    <div class="container"><a href="{% url 'all_plants' %}" class="plant-day-wrapper plant-day-link" data-aos="zoom-in-up" data-aos-duration="1000">
+    <div class="container"><a href="{% url 'plants:all_plants' %}" class="plant-day-wrapper plant-day-link" data-aos="zoom-in-up" data-aos-duration="1000">
 
             <div class="plant-day-image">
                 <img src="{% static 'images/monstera.png' %}" alt="{% trans 'Plant of the Day' %}">
@@ -171,7 +167,7 @@
 
         <div class="services-grid">
 
-            <a href="{% url 'services' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up">
+            <a href="{% url 'plants:find_plant' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up">
                 <div class="service-icon">
                     <i class="fa-solid fa-seedling"></i>
                 </div>
@@ -187,7 +183,7 @@
                 </span>
             </a>
 
-            <a href="{% url 'all_plants' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up" data-aos-delay="100">
+            <a href="{% url 'plants:all_plants' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -203,7 +199,7 @@
                 </span>
             </a>
 
-            <a href="{% url 'services' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up" data-aos-delay="200">
+            <a href="{% url 'core:services' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-icon">
                     <i class="fa-solid fa-scale-balanced"></i>
                 </div>
@@ -219,7 +215,7 @@
                 </span>
             </a>
 
-            <a href="{% url 'services' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up" data-aos-delay="300">
+            <a href="{% url 'core:services' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="service-icon">
                     <i class="fa-solid fa-camera"></i>
                 </div>
@@ -258,27 +254,27 @@
                 </p>
             </div>
 
-            <a href="{% url 'all_plants' %}" class="explore-more-btn">
+            <a href="{% url 'plants:all_plants' %}" class="explore-more-btn">
                 <span>{% trans "Explore More Categories" %}</span>
             </a>
         </div>
 
         <div class="explore-grid">
-            <a href="{% url 'all_plants' %}?category=indoor" class="explore-card" data-aos="fade-up">
+            <a href="{% url 'plants:all_plants' %}?category=indoor" class="explore-card" data-aos="fade-up">
                 <img src="{% static 'images/indoor.png' %}" alt="{% trans 'Indoor Plants' %}">
                 <div class="explore-overlay">
                     <h3>{% trans "Indoor Plants" %}</h3>
                 </div>
             </a>
 
-            <a href="{% url 'all_plants' %}?category=outdoor" class="explore-card" data-aos="fade-up" data-aos-delay="100">
+            <a href="{% url 'plants:all_plants' %}?category=outdoor" class="explore-card" data-aos="fade-up" data-aos-delay="100">
                 <img src="{% static 'images/outdoor.png' %}" alt="{% trans 'Outdoor Plants' %}">
                 <div class="explore-overlay">
                     <h3>{% trans "Outdoor Plants" %}</h3>
                 </div>
             </a>
 
-            <a href="{% url 'all_plants' %}?is_edible=true" class="explore-card" data-aos="fade-up" data-aos-delay="200">
+            <a href="{% url 'plants:all_plants' %}?is_edible=true" class="explore-card" data-aos="fade-up" data-aos-delay="200">
                 <img src="{% static 'images/food_plant.png' %}" alt="{% trans 'Edible Plants' %}">
                 <div class="explore-overlay">
                     <h3>{% trans "Edible Plants" %}</h3>

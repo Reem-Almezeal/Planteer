@@ -132,3 +132,25 @@ def search_plants(request:HttpRequest):
     }
 
     return render(request, 'plants/all_plants.html', context)
+
+def find_plant(request):
+    plants = Plant.objects.all()
+
+    light = request.GET.get("light")
+    watering = request.GET.get("watering")
+    edible = request.GET.get("edible")
+
+    if light:
+        plants = plants.filter(light_requirement__icontains=light)
+
+    if watering:
+        plants = plants.filter(watering__icontains=watering)
+
+    if edible == "yes":
+        plants = plants.filter(is_edible=True)
+    elif edible == "no":
+        plants = plants.filter(is_edible=False)
+
+    return render(request, "plants/find_plant.html", {
+        "plants": plants[:6]
+    })

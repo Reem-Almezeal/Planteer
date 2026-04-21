@@ -34,11 +34,11 @@
                 </p>
 
                 <div class="about-hero-actions">
-                    <a href="{% url 'all_plants' %}" class="planteer-btn">
+                    <a href="{% url 'plants:all_plants' %}" class="planteer-btn">
                         {% trans "Explore Plants" %}
                     </a>
 
-                    <a href="{% url 'contact' %}" class="planteer-btn-outline">
+                    <a href="{% url 'core:contact' %}" class="planteer-btn-outline">
                         {% trans "Contact Us" %}
                     </a>
                 </div>
@@ -166,7 +166,7 @@
                     {% trans "Explore Planteer and enjoy a botanical journey designed to be simple, elegant, and helpful." %}
                 </p>
 
-                <a href="{% url 'all_plants' %}" class="planteer-btn">
+                <a href="{% url 'plants:all_plants' %}" class="planteer-btn">
                     {% trans "Browse Plants" %}
                 </a>
             </div>
