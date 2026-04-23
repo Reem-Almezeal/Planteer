@@ -25,7 +25,7 @@
             </h1>
 
             <p>
-                {% trans "Planteer is a modern platform that helps users explore real plants, discover the best option for their lifestyle, and learn how to care for plants through a smart and elegant experience." %}
+                {% trans "Planteer is a modern platform that helps users explore real plants, discover the best option for their lifestyle, and learn how to care for plants through a smart and elegant experience" %}
             </p>
 
             <div class="hero-actions">
@@ -57,11 +57,11 @@
                 </h2>
 
                 <p class="section-text">
-                    {% trans "Planteer is designed to help users do more than just browse plants. It offers a modern way to explore plant categories, understand plant details, and discover the most suitable plant through smart tools and simple guidance." %}
+                    {% trans "Planteer is designed to help users do more than just browse plants. It offers a modern way to explore plant categories, understand plant details, and discover the most suitable plant through smart tools and simple guidance" %}
                 </p>
 
                 <p class="section-text">
-                    {% trans "The goal is to create a user-friendly botanical platform for beginners and plant lovers, combining real plant information with a smooth and intelligent experience." %}
+                    {% trans "The goal is to create a user-friendly botanical platform for beginners and plant lovers, combining real plant information with a smooth and intelligent experience" %}
                 </p>
 
                 <a href="#services" class="planteer-btn">
@@ -69,7 +69,7 @@
                 </a>
             </div>
             <div class="about-visual" data-aos="fade-left" data-aos-duration="1000">
-                <a href="{% url 'plants:all_plants' %}" class="about-image-card about-link-card">
+                <a href="{% url 'plants:plants_page' %}" class="about-image-card about-link-card">
                     <img src="{% static 'images/main_plant.png' %}" alt="{% trans 'Plant Experience' %}">
 
                     <div class="about-image-overlay">
@@ -110,7 +110,7 @@
 
 <!-- PLANT OF THE DAY SECTION -->
 <section class="home-section plant-day-section" id="plant-day">
-    <div class="container"><a href="{% url 'plants:all_plants' %}" class="plant-day-wrapper plant-day-link" data-aos="zoom-in-up" data-aos-duration="1000">
+    <div class="container"><a href="{% url 'plants:plants_page' %}" class="plant-day-wrapper plant-day-link" data-aos="zoom-in-up" data-aos-duration="1000">
 
             <div class="plant-day-image">
                 <img src="{% static 'images/monstera.png' %}" alt="{% trans 'Plant of the Day' %}">
@@ -130,7 +130,7 @@
                 </h3>
 
                 <p class="section-text">
-                    {% trans "A stylish and beginner-friendly indoor plant known for its elegant leaves and easy care routine." %}
+                    {% trans "A stylish and beginner-friendly indoor plant known for its elegant leaves and easy care routine" %}
                 </p>
 
                 <div class="plant-day-meta">
@@ -161,7 +161,7 @@
             </h2>
 
             <p class="section-text">
-                {% trans "Planteer offers modern tools that help users search, compare, explore, and identify plants in a more practical and engaging way." %}
+                {% trans "Planteer offers modern tools that help users search, compare, explore, and identify plants in a more practical and engaging way" %}
             </p>
         </div>
 
@@ -176,14 +176,14 @@
 
                 <h3>{% trans "Find Your Perfect Plant" %}</h3>
 
-                <p>{% trans "Answer simple questions and discover the plant that best matches your environment and routine." %}</p>
+                <p>{% trans "Answer a few simple questions and discover the plant that best matches for you" %}</p>
 
                 <span class="service-arrow">
                     <i class="fa-solid fa-arrow-right"></i>
                 </span>
             </a>
 
-            <a href="{% url 'plants:all_plants' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up" data-aos-delay="100">
+            <a href="{% url 'plants:plants_page' %}" class="service-card service-feature-card service-link-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -192,7 +192,7 @@
 
                 <h3>{% trans "Search Plants" %}</h3>
 
-                <p>{% trans "Quickly search for plants and access their details in an easy and direct way." %}</p>
+                <p>{% trans "Quickly search for plants and access their details in an easy and direct way" %}</p>
 
                 <span class="service-arrow">
                     <i class="fa-solid fa-arrow-right"></i>
@@ -208,7 +208,7 @@
 
                 <h3>{% trans "Compare Plants" %}</h3>
 
-                <p>{% trans "Compare two plants to better understand the differences and choose the right one." %}</p>
+                <p>{% trans "Compare two plants to better understand the differences and choose the right one" %}</p>
 
                 <span class="service-arrow">
                     <i class="fa-solid fa-arrow-right"></i>
@@ -224,7 +224,7 @@
 
                 <h3>{% trans "Upload and Identify" %}</h3>
 
-                <p>{% trans "Upload a plant image and discover useful information about it." %}</p>
+                <p>{% trans "Upload a plant image and discover useful information about it" %}</p>
 
                 <span class="service-arrow">
                     <i class="fa-solid fa-arrow-right"></i>
@@ -250,31 +250,31 @@
                 </h2>
 
                 <p class="section-text">
-                    {% trans "Explore a variety of plant types and discover what suits your room, your taste, and your care style." %}
+                    {% trans "Explore a variety of plant types and discover what suits your room, your taste, and your care style" %}
                 </p>
             </div>
 
-            <a href="{% url 'plants:all_plants' %}" class="explore-more-btn">
+            <a href="{% url 'plants:plants_page' %}" class="explore-more-btn">
                 <span>{% trans "Explore More Categories" %}</span>
             </a>
         </div>
 
         <div class="explore-grid">
-            <a href="{% url 'plants:all_plants' %}?category=indoor" class="explore-card" data-aos="fade-up">
+            <a href="{% url 'plants:plants_page' %}?category=indoor" class="explore-card" data-aos="fade-up">
                 <img src="{% static 'images/indoor.png' %}" alt="{% trans 'Indoor Plants' %}">
                 <div class="explore-overlay">
                     <h3>{% trans "Indoor Plants" %}</h3>
                 </div>
             </a>
 
-            <a href="{% url 'plants:all_plants' %}?category=outdoor" class="explore-card" data-aos="fade-up" data-aos-delay="100">
+            <a href="{% url 'plants:plants_page' %}?category=outdoor" class="explore-card" data-aos="fade-up" data-aos-delay="100">
                 <img src="{% static 'images/outdoor.png' %}" alt="{% trans 'Outdoor Plants' %}">
                 <div class="explore-overlay">
                     <h3>{% trans "Outdoor Plants" %}</h3>
                 </div>
             </a>
 
-            <a href="{% url 'plants:all_plants' %}?is_edible=true" class="explore-card" data-aos="fade-up" data-aos-delay="200">
+            <a href="{% url 'plants:plants_page' %}?is_edible=true" class="explore-card" data-aos="fade-up" data-aos-delay="200">
                 <img src="{% static 'images/food_plant.png' %}" alt="{% trans 'Edible Plants' %}">
                 <div class="explore-overlay">
                     <h3>{% trans "Edible Plants" %}</h3>

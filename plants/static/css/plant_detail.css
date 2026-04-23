@@ -670,6 +670,103 @@ html[dir="rtl"] .detail-value {
     padding-inline-end: 52px;
     text-align: right;
 }
+.plant-countries-section {
+    margin-top: 2rem;
+}
+
+.plant-countries-card {
+    padding: 24px;
+    border-radius: 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.plant-countries-head {
+    margin-bottom: 16px;
+}
+
+.plant-countries-head h3 {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+    font-weight: 900;
+    color: var(--text);
+}
+
+.plant-countries-head p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 0.92rem;
+}
+
+.country-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.country-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.country-tag:hover {
+    transform: translateY(-2px);
+    border-color: rgba(93, 163, 105, 0.28);
+    background: rgba(93, 163, 105, 0.10);
+}
+
+.country-tag img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.empty-tag {
+    opacity: 0.75;
+    cursor: default;
+}
+
+body.dark-mode .plant-countries-card {
+    background: linear-gradient(
+        180deg,
+        rgba(24, 29, 25, 0.94),
+        rgba(19, 23, 20, 0.94)
+    );
+    border: 1px solid rgba(110, 125, 113, 0.16);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22);
+}
+
+body.dark-mode .plant-countries-head h3,
+body.dark-mode .country-tag {
+    color: #edf3ee;
+}
+
+body.dark-mode .plant-countries-head p {
+    color: #b2bbb4;
+}
+
+body.dark-mode .country-tag {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(110, 125, 113, 0.16);
+}
+
+body.dark-mode .country-tag:hover {
+    background: rgba(93, 163, 105, 0.12);
+}
+
 
 @media (max-width: 991px) {
     .related-plants-grid {

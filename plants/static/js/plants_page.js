@@ -9,7 +9,7 @@ function handlePlantSearch(event) {
     if (searchValue !== "") {
         form.action = "{% url 'search_plants' %}";
     } else {
-        form.action = "{% url 'all_plants' %}";
+        form.action = "{% url 'plants_page' %}";
     }
 
     return true;

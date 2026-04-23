@@ -145,11 +145,6 @@
     color: #d64545;
     font-size: 0.82rem;
     font-weight: 600;
-}
-
-.plant-form input:invalid,
-.plant-form textarea:invalid,
-.plant-form select:invalid {
     border-color: rgba(214, 69, 69, 0.35);
 }
 

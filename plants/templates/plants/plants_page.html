@@ -5,7 +5,7 @@
 {% block title %}{% trans "All Plants" %} | Planteer{% endblock %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/plants.css' %}">
+<link rel="stylesheet" href="{% static 'css/plants_page.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -20,12 +20,12 @@
                 <div class="plants-cover-content">
                     <h2>{% trans "Explore All Plants" %}</h2>
                     <p>
-                        {% trans "Browse real plants, filter them by category, and discover the ones that fit your space and lifestyle." %}
+                        {% trans "Browse real plants, filter them by category, and discover the ones that fit your space and lifestyle" %}
                 </div>
             </div>
         </div>
 
-    <form method="get" action="{% url 'plants:search_plants' %}" class="plants-filters-card">
+    <form method="get" action="{% url 'plants:plants_page' %}" class="plants-filters-card">
         <div class="plants-filters-grid">
 
             <div class="filter-field search-field">
@@ -50,6 +50,20 @@
                     {% endfor %}
                 </select>
             </div>
+            <div class="filter-field">
+                <label for="country">{% trans "Country" %}</label>
+                <select name="country" id="country" class="filter-select">
+                    <option value="">
+                        {% trans "All Countries" %}
+                    </option>
+                    {% for country in countries %}
+                        <option value="{{ country.id }}"
+                            {% if selected_country == country.id|stringformat:"s" %}selected{% endif %} >
+                            {{ country.name }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
 
             <div class="filter-field">
                 <label for="is_edible">{% trans "Edible" %}</label>
@@ -65,16 +79,11 @@
             </div>
 
             <div class="filter-actions">
-                <button
-                    type="submit"
-                    class="planteer-btn"
-                    formaction="{% url 'plants:search_plants' %}"
-                    onclick="return handlePlantSearch(event)"
-                >
-                    {% trans "Search" %}
-                </button>
+            <button type="submit" class="planteer-btn">
+                {% trans "Search" %}
+            </button>
 
-                <a href="{% url 'plants:all_plants' %}" class="clear-filters-btn">
+                <a href="{% url 'plants:plants_page' %}" class="clear-filters-btn">
                     {% trans "Cancel" %}
                 </a>
             </div>
@@ -93,59 +102,24 @@
             </a>
         {% endif %}
     </div>
-
-        <div class="plants-grid">
-            {% for plant in plants %}
-                <article class="plant-card">
-                    <div class="plant-card-image">
-                        <img src="{{ plant.image.url }}" alt="{{ plant.name }}">
-                    </div>
-
-                    <div class="plant-card-body">
-                        <div class="plant-badges">
-                            <span class="plant-badge">
-                                {{ plant.get_category_display }}
-                            </span>
-
-                            {% if plant.is_edible %}
-                                <span class="plant-badge edible-badge">
-                                    {% trans "Edible" %}
-                                </span>
-                            {% endif %}
-                        </div>
-
-                        <h3 class="plant-name">{{ plant.name }}</h3>
-
-                        <p class="plant-about">
-                            {{ plant.about|truncatewords:18 }}
-                        </p>
-
-                        <div class="plant-meta">
-                            {% if plant.light_requirement %}
-                                <span>{% trans "Light" %}: {{ plant.light_requirement }}</span>
-                            {% endif %}
-
-                            {% if plant.watering %}
-                                <span>{% trans "Water" %}: {{ plant.watering }}</span>
-                            {% endif %}
-                        </div><div class="plant-actions">
-                            <a href="{% url 'plants:plant_detail' plant.id %}" class="planteer-btn-outline">
-                                {% trans "View Details" %}
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            {% empty %}
-                <div class="plants-empty">
-                    <h3>{% trans "No plants found" %}</h3>
-                    <p>{% trans "Try changing the filters or adding new plants." %}</p>
-                </div>
-            {% endfor %}
-        </div>
-
+    <div class="plants-grid">
+        {% for plant in plants %}
+            {% include 'plants/includes/plant_parts.html' with plant=plant %}
+        {% empty %}
+            <div class="plants-empty">
+                <h3>{% trans "No plants found" %}</h3>
+                <p>{% trans "Try changing the filters or adding new plants" %}</p>
+            </div>
+        {% endfor %}
     </div>
+</div>
 </section>
-<script src="{% static 'js/all_plants.js' %}"></script>
+<div class="plants-preview-footer">
+    <a href="{% url 'plants:view_plants' %}" class="show-all-plants-btn">
+        {% trans "View All Plants" %}
+    </a>
+</div>
+<script src="{% static 'js/plants_page.js' %}"></script>
 {% endblock %}
 
 {% block extra_js %}

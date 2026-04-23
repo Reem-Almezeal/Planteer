@@ -401,7 +401,51 @@ body.dark-mode .filter-actions .clear-filters-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(115, 201, 134, 0.22);
 }
+.country-flag-preview {
+    width: 90px;
+    height: 90px;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
 
+.country-flag-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plants-preview-footer {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+.show-all-plants-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 190px;
+    height: 52px;
+    padding: 0 22px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #4f9259, #69b474);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    box-shadow: 0 16px 28px rgba(79, 146, 89, 0.18);
+    transition: 0.25s ease;
+}
+
+
+.show-all-plants-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 34px rgba(79, 146, 89, 0.24);
+}
+
+/*lang*/
 html[dir="rtl"] .plants-results-head {
     flex-direction: row-reverse;
 }
@@ -426,6 +470,7 @@ html[dir="rtl"] .plants-results-head {
 html[dir="rtl"] .plant-actions {
     justify-content: flex-start;
 }
+
 
 /*Responsive*/
 @media (max-width: 991px) {

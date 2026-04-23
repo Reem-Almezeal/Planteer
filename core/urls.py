@@ -11,5 +11,4 @@ urlpatterns = [
     path('contact/messages/', views.contact_messages_view, name='contact_messages'),
     path('services/', views.services_view, name='services'),
     
-
 ]

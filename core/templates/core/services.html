@@ -31,9 +31,6 @@
             <a href="{%url 'plants:find_plant' %}" class="service-card reveal-up">
                 <div class="service-card-glow"></div>
                 <span class="service-card-number">01</span>
-                <span class="coming-soon-badge">
-                    {% trans "Coming Soon" %}
-                </span>
 
                 <div class="service-card-icon">
                     <i class="fa-solid fa-seedling"></i>
@@ -44,7 +41,7 @@
                 </h2>
 
                 <p class="service-card-text">
-                    {% trans "Answer a few questions and discover the most suitable plant for you." %}
+                    {% trans "Answer a few simple questions and discover the plant that best matches for you" %}
                 </p>
 
                 <div class="service-card-action">
@@ -54,7 +51,7 @@
                 </div>
             </a>
 
-            <a href="{% url 'plants:all_plants' %}" class="service-card reveal-up">
+            <a href="{% url 'plants:plants_page' %}" class="service-card reveal-up">
                 <div class="service-card-glow"></div>
                 <span class="service-card-number">02</span>
 
@@ -85,15 +82,15 @@
                 </span>
 
                 <div class="service-card-icon">
-                    <i class="fa-solid fa-seedling"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
 
                 <h2 class="service-card-title">
-                    {% trans "Find Your Perfect Plant" %}
+                    {% trans "Compare Plants" %}
                 </h2>
 
                 <p class="service-card-text">
-                    {% trans "Answer a few simple questions and discover the plant that best matches" %}
+                    {% trans "Compare two plants to better understand the differences and choose the right one" %}
                 </p>
 
                 <div class="service-card-action">

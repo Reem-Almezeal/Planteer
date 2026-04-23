@@ -9,11 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const savedTheme = localStorage.getItem("planteer-theme") || "light";
 
     function applyTheme(theme) {
-        html.setAttribute("data-theme", theme);
+        document.documentElement.setAttribute("data-theme", theme);
 
-        if (themeToggle) {
-            themeToggle.textContent = theme === "dark" ? "🌙" : "☀️";
-        }
+        const icon = themeToggle.querySelector("i");
+        icon.className = theme === "dark"
+            ? "bi bi-moon-stars-fill"
+            : "bi bi-brightness-high-fill";
 
         localStorage.setItem("planteer-theme", theme);
     }

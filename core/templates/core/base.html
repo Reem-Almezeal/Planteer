@@ -39,6 +39,7 @@ Pages included:
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% block extra_css %}{% endblock %}
@@ -52,7 +53,7 @@ Pages included:
             <div class="container">
 
                 <a class="navbar-brand brand" href="{% url 'core:home' %}">
-                    <span class="brand-mark">🌿</span>
+                    <span class="brand-mark"><i class="bi bi-tree"></i></span>
                     <span class="brand-text">{% trans "Planteer" %}</span>
                 </a>
 
@@ -83,7 +84,7 @@ Pages included:
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'plants:all_plants' %}">
+                            <a class="nav-link" href="{% url 'plants:plants_page' %}">
                                 {% trans "Plants" %}
                             </a>
                         </li>
@@ -119,7 +120,7 @@ Pages included:
                         </form>
 
                         <button id="theme-toggle" class="mini-btn" type="button">
-                            ☀️
+                            <i class="bi bi-moon-stars-fill"></i>
                         </button>
                     </div>
                 </div>
@@ -139,7 +140,7 @@ Pages included:
                 <div class="footer-top">
 
                     <div class="footer-brand">
-                        <div class="footer-logo">🌿</div>
+                        <div class="footer-logo"><i class="bi bi-tree"></i></div>
 
                         <div>
                             <h3 class="footer-title">
@@ -147,7 +148,7 @@ Pages included:
                             </h3>
 
                             <p class="footer-description">
-                                {% trans "Discover, manage, and explore beautiful real plants through a premium botanical experience." %}
+                                {% trans "Discover, manage, and explore beautiful real plants through a premium botanical experience" %}
                             </p>
                         </div>
                     </div>
@@ -163,7 +164,7 @@ Pages included:
                                 {% trans "About" %}
                             </a>
 
-                            <a href="{% url 'plants:all_plants' %}">
+                            <a href="{% url 'plants:plants_page' %}">
                                 {% trans "Plants" %}
                             </a>
 
@@ -186,7 +187,7 @@ Pages included:
 
                 <div class="footer-bottom">
                     <span>
-                        {% trans "© 2026 Planteer. Designed with nature in mind." %}
+                        {% trans "© 2026 Planteer. Designed with nature in mind" %}
                     </span>
                 </div>
 

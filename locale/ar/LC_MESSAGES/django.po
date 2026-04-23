@@ -620,7 +620,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:499
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: .\venv\Lib\site-packages\django\forms\models.py:925
 #, python-format
@@ -1276,9 +1276,6 @@ msgstr "الرئيسية"
 msgid "Plants"
 msgstr "النباتات"
 
-msgid "Search"
-msgstr "البحث"
-
 msgid "Add Plant"
 msgstr "إضافة نبتة"
 
@@ -1291,20 +1288,20 @@ msgstr "الصفحات"
 msgid "Manage"
 msgstr "الإدارة"
 
-msgid "Discover, manage, and explore beautiful real plants through a premium botanical experience."
-msgstr "اكتشف وأدر واستعرض النباتات الحقيقية من خلال تجربة نباتية أنيقة ومميزة."
+msgid "Discover, manage, and explore beautiful real plants through a premium botanical experience"
+msgstr "اكتشف وأدر واستعرض النباتات الحقيقية من خلال تجربة نباتية أنيقة ومميزة"
 
-msgid "© 2026 Planteer. Designed with nature in mind."
-msgstr "© 2026 بلانتير. صُمم بروح الطبيعة."
+msgid "© 2026 Planteer. Designed with nature in mind"
+msgstr "© 2026 بلانتير. صُمم بروح الطبيعة"
 
 msgid "Premium Botanical Experience"
 msgstr "تجربة نباتية فاخرة"
 
-msgid "Bring nature into your space with elegance."
-msgstr "أدخل الطبيعة إلى مساحتك بأناقة."
+msgid "Bring nature into your space with elegance"
+msgstr "أدخل الطبيعة إلى مساحتك بأناقة"
 
-msgid "Discover real plants, explore their benefits, and enjoy a smart plant experience through Planteer."
-msgstr "اكتشف نباتات حقيقية وتعرف على فوائدها واستمتع بتجربة نباتية ذكية عبر بلانتير."
+msgid "Discover real plants, explore their benefits, and enjoy a smart plant experience through Planteer"
+msgstr "اكتشف نباتات حقيقية وتعرف على فوائدها واستمتع بتجربة نباتية ذكية عبر بلانتير"
 
 msgid "Real Plants"
 msgstr "نباتات حقيقية"
@@ -1318,14 +1315,14 @@ msgstr "اكتشاف النباتات"
 msgid "Featured Plants"
 msgstr "النباتات المميزة"
 
-msgid "A curated collection of beautiful real plants for every space."
-msgstr "تشكيلة مختارة من النباتات الحقيقية الجميلة لكل مساحة."
+msgid "A curated collection of beautiful real plants for every space"
+msgstr "تشكيلة مختارة من النباتات الحقيقية الجميلة لكل مساحة"
 
 msgid "View Details"
 msgstr "عرض التفاصيل"
 
-msgid "No plants added yet. Start by adding your first plant."
-msgstr "لا توجد نباتات مضافة بعد. ابدئي بإضافة أول نبتة."
+msgid "No plants added yet. Start by adding your first plant"
+msgstr "لا توجد نباتات مضافة بعد. ابدئي بإضافة أول نبتة"
 
 msgid "Explore by Category"
 msgstr "استكشاف حسب التصنيف"
@@ -1348,38 +1345,38 @@ msgstr "مزهرة"
 msgid "Smart Plant Features"
 msgstr "مميزات نباتية ذكية"
 
-msgid "More than browsing, Planteer helps users discover, compare, and understand plants."
-msgstr "بلانتير أكثر من مجرد تصفح، فهو يساعد المستخدم على اكتشاف النباتات ومقارنتها وفهمها."
+msgid "More than browsing, Planteer helps users discover, compare, and understand plants"
+msgstr "بلانتير أكثر من مجرد تصفح، فهو يساعد المستخدم على اكتشاف النباتات ومقارنتها وفهمها"
 
 msgid "Plant Match Quiz"
 msgstr "اختبار النبتة المناسبة"
 
-msgid "Find the right plant based on sunlight, space, and lifestyle."
-msgstr "اعثري على النبتة المناسبة حسب الضوء والمساحة ونمط الحياة."
+msgid "Find the right plant based on sunlight, space, and lifestyle"
+msgstr "اعثري على النبتة المناسبة حسب الضوء والمساحة ونمط الحياة"
 
 msgid "Search by Image"
 msgstr "البحث بالصورة"
 
-msgid "Upload a plant photo to identify it and learn more about it."
-msgstr "ارفعي صورة لنبتة للتعرف عليها ومعرفة المزيد عنها."
+msgid "Upload a plant photo to identify it and learn more about it"
+msgstr "ارفعي صورة لنبتة للتعرف عليها ومعرفة المزيد عنها"
 
-msgid "Compare care level, category, and edibility between plants."
-msgstr "قارني بين النباتات من حيث العناية والتصنيف وإمكانية الأكل."
+msgid "Compare care level, category, and edibility between plants"
+msgstr "قارني بين النباتات من حيث العناية والتصنيف وإمكانية الأكل"
 
-msgid "Check common plant problems and get quick care tips."
-msgstr "تحققي من مشاكل النباتات الشائعة واحصلي على نصائح سريعة للعناية."
+msgid "Check common plant problems and get quick care tips"
+msgstr "تحققي من مشاكل النباتات الشائعة واحصلي على نصائح سريعة للعناية"
 
-msgid "Discover the best plants for your office, bedroom, or balcony."
-msgstr "اكتشف أفضل النباتات لمكتبك أو غرفة نومك أو شرفتك."
+msgid "Discover the best plants for your office, bedroom, or balcony"
+msgstr "اكتشف أفضل النباتات لمكتبك أو غرفة نومك أو شرفتك"
 
 msgid "Favorites & Wishlist"
 msgstr "المفضلة وقائمة الرغبات"
 
-msgid "Save the plants you love and revisit them anytime."
-msgstr "احفظي النباتات التي تعجبك وعودي لها في أي وقت."
+msgid "Save the plants you love and revisit them anytime"
+msgstr "احفظي النباتات التي تعجبك وعودي لها في أي وقت"
 
-msgid "A stylish indoor plant known for its split leaves and elegant tropical look."
-msgstr "نبتة داخلية أنيقة معروفة بأوراقها المشققة ومظهرها الاستوائي الجميل."
+msgid "A stylish indoor plant known for its split leaves and elegant tropical look"
+msgstr "نبتة داخلية أنيقة معروفة بأوراقها المشققة ومظهرها الاستوائي الجميل"
 
 msgid "Best for: Indoor spaces"
 msgstr "الأفضل لـ: المساحات الداخلية"
@@ -1393,17 +1390,17 @@ msgstr "مستوى العناية: سهل إلى متوسط"
 msgid "Plant Care Guide"
 msgstr "دليل العناية بالنبات"
 
-msgid "Learn simple care tips, understand watering needs, and keep your plants healthy."
-msgstr "تعلمي نصائح بسيطة للعناية، وافهمي احتياجات الري، وحافظي على صحة نباتاتك."
+msgid "Learn simple care tips, understand watering needs, and keep your plants healthy"
+msgstr "تعلمي نصائح بسيطة للعناية، وافهمي احتياجات الري، وحافظي على صحة نباتاتك"
 
 msgid "Start Exploring"
 msgstr "ابدء الاستكشاف"
 
-msgid "Start your botanical journey today."
-msgstr "ابدئي رحلتك النباتية اليوم."
+msgid "Start your botanical journey today"
+msgstr "ابدئي رحلتك النباتية اليوم"
 
-msgid "Browse plants, add new ones, and build a smarter plant experience with Planteer."
-msgstr "تصفحي النباتات وأضيفي نباتات جديدة واصنعي تجربة نباتية أذكى مع بلانتير."
+msgid "Browse plants, add new ones, and build a smarter plant experience with Planteer"
+msgstr "تصفحي النباتات وأضيفي نباتات جديدة واصنعي تجربة نباتية أذكى مع بلانتير"
 
 msgid "Browse Plants"
 msgstr "تصفح النباتات"
@@ -1421,8 +1418,8 @@ msgstr "تجربة نباتية ذكية"
 msgid "Discover the right plant for the right space"
 msgstr "اكتشف النبتة المناسبة للمكان المناسب"
 
-msgid "Planteer is a modern platform that helps users explore real plants, discover the best option for their lifestyle, and learn how to care for plants through a smart and elegant experience."
-msgstr "بلانتير منصة حديثة تساعد المستخدم على استكشاف النباتات الحقيقية، واكتشاف الخيار الأنسب لأسلوب حياته، وتعلّم طريقة العناية بالنباتات من خلال تجربة ذكية وأنيقة."
+msgid "Planteer is a modern platform that helps users explore real plants, discover the best option for their lifestyle, and learn how to care for plants through a smart and elegant experience"
+msgstr "بلانتير منصة حديثة تساعد المستخدم على استكشاف النباتات الحقيقية، واكتشاف الخيار الأنسب لأسلوب حياته، وتعلّم طريقة العناية بالنباتات من خلال تجربة ذكية وأنيقة"
 
 msgid "Explore Plants"
 msgstr "استكشف النباتات"
@@ -1436,11 +1433,11 @@ msgstr "لماذا بلانتير"
 msgid "More than a plant website"
 msgstr "أكثر من مجرد موقع للنباتات"
 
-msgid "Planteer is designed to help users do more than just browse plants. It offers a modern way to explore plant categories, understand plant details, and discover the most suitable plant through smart tools and simple guidance."
-msgstr "تم تصميم بلانتير ليمنح المستخدم أكثر من مجرد تصفح النباتات. فهو يوفّر طريقة حديثة لاستكشاف الفئات المختلفة، وفهم تفاصيل النباتات، واكتشاف النبتة الأنسب من خلال أدوات ذكية وإرشادات بسيطة."
+msgid "Planteer is designed to help users do more than just browse plants. It offers a modern way to explore plant categories, understand plant details, and discover the most suitable plant through smart tools and simple guidance"
+msgstr "تم تصميم بلانتير ليمنح المستخدم أكثر من مجرد تصفح النباتات. فهو يوفّر طريقة حديثة لاستكشاف الفئات المختلفة، وفهم تفاصيل النباتات، واكتشاف النبتة الأنسب من خلال أدوات ذكية وإرشادات بسيطة"
 
-msgid "The goal is to create a user-friendly botanical platform for beginners and plant lovers, combining real plant information with a smooth and intelligent experience."
-msgstr "الهدف هو إنشاء منصة نباتية سهلة الاستخدام للمبتدئين ومحبي النباتات، تجمع بين المعلومات الحقيقية وتجربة ذكية وسلسة."
+msgid "The goal is to create a user-friendly botanical platform for beginners and plant lovers, combining real plant information with a smooth and intelligent experience"
+msgstr "الهدف هو إنشاء منصة نباتية سهلة الاستخدام للمبتدئين ومحبي النباتات، تجمع بين المعلومات الحقيقية وتجربة ذكية وسلسة"
 
 msgid "Explore Smart Tools"
 msgstr "استكشف الأدوات الذكية"
@@ -1466,8 +1463,8 @@ msgstr "مميزة اليوم"
 msgid "Monstera Deliciosa"
 msgstr "مونستيرا ديليسيوسا"
 
-msgid "A stylish and beginner-friendly indoor plant known for its elegant leaves and easy care routine."
-msgstr "نبتة داخلية أنيقة ومناسبة للمبتدئين، تتميز بأوراقها الجميلة وسهولة العناية بها."
+msgid "A stylish and beginner-friendly indoor plant known for its elegant leaves and easy care routine"
+msgstr "نبتة داخلية أنيقة ومناسبة للمبتدئين، تتميز بأوراقها الجميلة وسهولة العناية بها"
 
 msgid "Light"
 msgstr "الإضاءة"
@@ -1494,24 +1491,24 @@ msgid "Smart Tools"
 msgstr "الأدوات الذكية"
 
 
-msgid "Planteer offers modern tools that help users search, compare, explore, and identify plants in a more practical and engaging way."
-msgstr "يوفّر بلانتير أدوات حديثة تساعد المستخدم على البحث والمقارنة والاستكشاف والتعرّف على النباتات بطريقة أكثر عملية ومتعة."
+msgid "Planteer offers modern tools that help users search, compare, explore, and identify plants in a more practical and engaging way"
+msgstr "يوفّر بلانتير أدوات حديثة تساعد المستخدم على البحث والمقارنة والاستكشاف والتعرّف على النباتات بطريقة أكثر عملية ومتعة"
 
 
 msgid "Answer simple questions and discover the plant that best matches your environment and routine"
 msgstr "أجب عن بعض الأسئلة البسيطة واكتشف النبتة الأنسب لبيئتك وروتينك"
 
 
-msgid "Quickly search for plants and access their details in an easy and direct way."
-msgstr "ابحث بسرعة عن النباتات واعرض تفاصيلها بطريقة سهلة ومباشرة."
+msgid "Quickly search for plants and access their details in an easy and direct way"
+msgstr "ابحث بسرعة عن النباتات واعرض تفاصيلها بطريقة سهلة ومباشرة"
 
 
-msgid "Compare two plants to better understand the differences and choose the right one."
-msgstr "قارن بين نبتتين لفهم الفروقات واختيار الأنسب."
+msgid "Compare two plants to better understand the differences and choose the right one"
+msgstr "قارن بين نبتتين لفهم الفروقات واختيار الأنسب"
 
 
-msgid "Upload a plant image and discover useful information about it."
-msgstr "ارفع صورة لنبتة وتعرّف على معلومات مفيدة عنها."
+msgid "Upload a plant image and discover useful information about it"
+msgstr "ارفع صورة لنبتة وتعرّف على معلومات مفيدة عنها"
 
 msgid "Explore different plant categories"
 msgstr "استكشف فئات النباتات المختلفة"
@@ -1519,8 +1516,8 @@ msgstr "استكشف فئات النباتات المختلفة"
 msgid "Browse different plant categories"
 msgstr "تصفح فئات النباتات المختلفة"
 
-msgid "Explore a variety of plant types and discover what suits your room, your taste, and your care style."
-msgstr "استكشف أنواعًا مختلفة من النباتات واكتشف ما يناسب غرفتك وذوقك وطريقة عنايتك."
+msgid "Explore a variety of plant types and discover what suits your room, your taste, and your care style"
+msgstr "استكشف أنواعًا مختلفة من النباتات واكتشف ما يناسب غرفتك وذوقك وطريقة عنايتك"
 
 msgid "Indoor Plants"
 msgstr "النباتات الداخلية"
@@ -1549,8 +1546,8 @@ msgstr "إلغاء"
 msgid "Edit Plant"
 msgstr "تعديل النبتة"
 
-msgid "Fill in the plant information below."
-msgstr "أدخل معلومات النبتة أدناه."
+msgid "Fill in the plant information below"
+msgstr "أدخل معلومات النبتة أدناه"
 
 msgid "Name"
 msgstr "الاسم"
@@ -1589,8 +1586,8 @@ msgstr "جرّب البحث بكلمة مختلفة"
 msgid "Explore All Plants"
 msgstr "استكشف جميع النباتات"
 
-msgid "Browse real plants, filter them by category, and discover the ones that fit your space and lifestyle."
-msgstr "تصفح النباتات الحقيقية، وقم بتصفيتها حسب الفئة، واكتشف ما يناسب مساحتك وأسلوب حياتك."
+msgid "Browse real plants, filter them by category, and discover the ones that fit your space and lifestyle"
+msgstr "تصفح النباتات الحقيقية، وقم بتصفيتها حسب الفئة، واكتشف ما يناسب مساحتك وأسلوب حياتك"
 
 msgid "Search by plant name"
 msgstr "ابحث باسم النبتة"
@@ -1613,8 +1610,8 @@ msgstr "نتيجة"
 msgid "Add New Plant"
 msgstr "إضافة نبتة جديدة"
 
-msgid "Try changing the filters or adding new plants."
-msgstr "جرّب تغيير الفلاتر أو إضافة نباتات جديدة."
+msgid "Try changing the filters or adding new plants"
+msgstr "جرّب تغيير الفلاتر أو إضافة نباتات جديدة"
 
 msgid "Back to Plants"
 msgstr "العودة للنباتات"
@@ -1622,8 +1619,8 @@ msgstr "العودة للنباتات"
 msgid "Delete Plant?"
 msgstr "حذف النبتة؟"
 
-msgid "Are you sure you want to delete this plant? This action cannot be undone."
-msgstr "هل أنت متأكد أنك تريد حذف هذه النبتة؟ لا يمكن التراجع عن هذا الإجراء."
+msgid "Are you sure you want to delete this plant? This action cannot be undone"
+msgstr "هل أنت متأكد أنك تريد حذف هذه النبتة؟ لا يمكن التراجع عن هذا الإجراء"
 
 
 msgid "Comments"
@@ -1638,35 +1635,35 @@ msgstr "اكتب تعليقك..."
 msgid "Add Comment"
 msgstr "إضافة تعليق"
 
-msgid "No comments yet."
-msgstr "لا توجد تعليقات بعد."
+msgid "No comments yet"
+msgstr "لا توجد تعليقات بعد"
 
 msgid "Related Plants"
 msgstr "نباتات مشابهة"
 
-msgid "Discover more plants from the same category."
-msgstr "اكتشف المزيد من النباتات من نفس الفئة."
+msgid "Discover more plants from the same category"
+msgstr "اكتشف المزيد من النباتات من نفس الفئة"
 
 msgid "No related plants yet"
 msgstr "لا توجد نباتات مشابهة بعد"
 
-msgid "There are no other plants in the same category right now."
-msgstr "لا توجد نباتات أخرى من نفس الفئة حاليًا."
+msgid "There are no other plants in the same category right now"
+msgstr "لا توجد نباتات أخرى من نفس الفئة حاليًا"
 
 msgid "Get In Touch"
 msgstr "تواصل معنا"
 
-msgid "Have a question, suggestion, or message for Planteer? We would love to hear from you."
-msgstr "هل لديك سؤال أو اقتراح أو رسالة لـ بلانتير يسعدنا أن نسمع منك."
+msgid "Have a question, suggestion, or message for Planteer? We would love to hear from you"
+msgstr "هل لديك سؤال أو اقتراح أو رسالة لـ بلانتير يسعدنا أن نسمع منك"
 
 msgid "Send a Message"
 msgstr "أرسل رسالة"
 
-msgid "Fill out the form below and we will get back to you."
-msgstr "املأ النموذج أدناه وسنتواصل معك قريبًا."
+msgid "Fill out the form below and we will get back to you"
+msgstr "املأ النموذج أدناه وسنتواصل معك قريبًا"
 
-msgid "Your message has been sent successfully."
-msgstr "تم إرسال رسالتك بنجاح."
+msgid "Your message has been sent successfully"
+msgstr "تم إرسال رسالتك بنجاح"
 
 msgid "First Name"
 msgstr "الاسم الأول"
@@ -1689,14 +1686,14 @@ msgstr "راسلنا عبر البريد"
 msgid "Plant Support"
 msgstr "دعم النباتات"
 
-msgid "Ask about plants, care tips, and suggestions."
-msgstr "اسأل عن النباتات، ونصائح العناية، والاقتراحات."
+msgid "Ask about plants, care tips, and suggestions"
+msgstr "اسأل عن النباتات، ونصائح العناية، والاقتراحات"
 
 msgid "Response Time"
 msgstr "مدة الرد"
 
-msgid "Usually within 24 to 48 hours."
-msgstr "عادة خلال 24 إلى 48 ساعة."
+msgid "Usually within 24 to 48 hours"
+msgstr "عادة خلال 24 إلى 48 ساعة"
 
 msgid "Planteer Care"
 msgstr "عناية بلانتير"
@@ -1704,8 +1701,8 @@ msgstr "عناية بلانتير"
 msgid "We care about your feedback"
 msgstr "نهتم بملاحظاتك"
 
-msgid "Every message helps us improve the plant experience for everyone."
-msgstr "كل رسالة تساعدنا على تحسين تجربة النباتات للجميع."
+msgid "Every message helps us improve the plant experience for everyone"
+msgstr "كل رسالة تساعدنا على تحسين تجربة النباتات للجميع"
 
 msgid "Contact Messages"
 msgstr "رسائل التواصل"
@@ -1713,8 +1710,8 @@ msgstr "رسائل التواصل"
 msgid "Dashboard"
 msgstr "لوحة التحكم"
 
-msgid "Review all messages sent by users through the contact page."
-msgstr "راجع جميع الرسائل التي أرسلها المستخدمون عبر صفحة التواصل."
+msgid "Review all messages sent by users through the contact page"
+msgstr "راجع جميع الرسائل التي أرسلها المستخدمون عبر صفحة التواصل"
 
 msgid "Reply"
 msgstr "رد"
@@ -1722,8 +1719,8 @@ msgstr "رد"
 msgid "No messages yet"
 msgstr "لا توجد رسائل بعد"
 
-msgid "When users send a message from the contact page, it will appear here."
-msgstr "عندما يرسل المستخدمون رسالة من صفحة التواصل، ستظهر هنا."
+msgid "When users send a message from the contact page, it will appear here"
+msgstr "عندما يرسل المستخدمون رسالة من صفحة التواصل، ستظهر هنا"
 
 msgid "About Planteer"
 msgstr "عن بلانتير"
@@ -1731,8 +1728,8 @@ msgstr "عن بلانتير"
 msgid "A smarter botanical experience for every plant lover"
 msgstr "تجربة نباتية اذكى لكل محب للنباتات"
 
-msgid "Planteer is a modern platform that helps users explore real plants, understand their needs, and discover the right plant for every room, lifestyle, and level of experience."
-msgstr "بلانتير منصة حديثة تساعد المستخدمين على استكشاف النباتات الحقيقية، وفهم احتياجاتها، واكتشاف النبتة المناسبة لكل غرفة ولكل نمط حياة ولكل مستوى من الخبرة."
+msgid "Planteer is a modern platform that helps users explore real plants, understand their needs, and discover the right plant for every room, lifestyle, and level of experience"
+msgstr "بلانتير منصة حديثة تساعد المستخدمين على استكشاف النباتات الحقيقية، وفهم احتياجاتها، واكتشاف النبتة المناسبة لكل غرفة ولكل نمط حياة ولكل مستوى من الخبرة"
 
 msgid "Smart Discovery"
 msgstr "اكتشاف ذكي"
@@ -1740,29 +1737,29 @@ msgstr "اكتشاف ذكي"
 msgid "Our Mission"
 msgstr "مهمتنا"
 
-msgid "We aim to make plant discovery easier, smarter, and more enjoyable by combining elegant design with useful plant information."
-msgstr "نسعى إلى جعل اكتشاف النباتات أسهل وأكثر ذكاءً ومتعة من خلال الجمع بين التصميم الأنيق والمعلومات المفيدة."
+msgid "We aim to make plant discovery easier, smarter, and more enjoyable by combining elegant design with useful plant information"
+msgstr "نسعى إلى جعل اكتشاف النباتات أسهل وأكثر ذكاءً ومتعة من خلال الجمع بين التصميم الأنيق والمعلومات المفيدة"
 
 msgid "What We Offer"
 msgstr "ماذا نقدم"
 
-msgid "Planteer allows users to browse plant categories, search for plants, compare options, and learn practical care information in a smooth experience."
-msgstr "يتيح بلانتير للمستخدمين تصفح فئات النباتات، والبحث عنها، ومقارنة الخيارات، وتعلم معلومات عملية للعناية بها ضمن تجربة سلسة."
+msgid "Planteer allows users to browse plant categories, search for plants, compare options, and learn practical care information in a smooth experience"
+msgstr "يتيح بلانتير للمستخدمين تصفح فئات النباتات، والبحث عنها، ومقارنة الخيارات، وتعلم معلومات عملية للعناية بها ضمن تجربة سلسة"
 
 msgid "Why Plants Matter"
 msgstr "لماذا النباتات مهمة"
 
-msgid "Plants add beauty, calmness, and life to spaces. They help people feel closer to nature while improving the atmosphere of homes and workspaces."
-msgstr "تضيف النباتات الجمال والهدوء والحياة إلى المساحات. كما تساعد الناس على الشعور بالقرب من الطبيعة وتحسن أجواء المنازل وأماكن العمل."
+msgid "Plants add beauty, calmness, and life to spaces. They help people feel closer to nature while improving the atmosphere of homes and workspaces"
+msgstr "تضيف النباتات الجمال والهدوء والحياة إلى المساحات. كما تساعد الناس على الشعور بالقرب من الطبيعة وتحسن أجواء المنازل وأماكن العمل"
 
 msgid "Planteer Experience"
 msgstr "تجربة بلانتير"
 
-msgid "Built for beginners, plant lovers, and modern spaces."
-msgstr "مصممة للمبتدئين ومحبي النباتات والمساحات العصرية."
+msgid "Built for beginners, plant lovers, and modern spaces"
+msgstr "مصممة للمبتدئين ومحبي النباتات والمساحات العصرية"
 
-msgid "Whether you are looking for an indoor plant, a decorative flower, or a useful edible plant, Planteer helps you find choices that match your taste and your daily routine."
-msgstr "سواء كنت تبحث عن نبتة داخلية، أو زهرة للزينة، أو نبتة صالحة للأكل، يساعدك بلانتير على العثور على خيارات تناسب ذوقك وروتينك اليومي."
+msgid "Whether you are looking for an indoor plant, a decorative flower, or a useful edible plant, Planteer helps you find choices that match your taste and your daily routine"
+msgstr "سواء كنت تبحث عن نبتة داخلية، أو زهرة للزينة، أو نبتة صالحة للأكل، يساعدك بلانتير على العثور على خيارات تناسب ذوقك وروتينك اليومي"
 
 msgid "Explore real plant categories"
 msgstr "استكشف فئات النباتات الحقيقية"
@@ -1776,25 +1773,25 @@ msgstr "افهم احتياجات الري والإضاءة"
 msgid "Easy Access"
 msgstr "وصول سهل"
 
-msgid "Discover plants that fit your lifestyle."
-msgstr "اكتشف نباتات تناسب أسلوب حياتك."
+msgid "Discover plants that fit your lifestyle"
+msgstr "اكتشف نباتات تناسب أسلوب حياتك"
 
-msgid "Explore Planteer and enjoy a botanical journey designed to be simple, elegant, and helpful."
-msgstr "استكشف بلانتير واستمتع برحلة نباتية صُممت لتكون بسيطة وأنيقة ومفيدة."
+msgid "Explore Planteer and enjoy a botanical journey designed to be simple, elegant, and helpful"
+msgstr "استكشف بلانتير واستمتع برحلة نباتية صُممت لتكون بسيطة وأنيقة ومفيدة"
 msgid "Planteer Services"
 msgstr "خدمات Planteer"
 
 msgid "Features that make the experience smarter"
 msgstr "ميزات تجعل التجربة أكثر ذكاءً"
 
-msgid "Planteer offers modern tools that help users search, compare, discover, and learn about plants in a more practical and enjoyable way."
-msgstr "يوفر Planteer أدوات حديثة تساعد المستخدم على البحث والمقارنة والاستكشاف والتعرف على النباتات بطريقة أكثر عملية ومتعة."
+msgid "Planteer offers modern tools that help users search, compare, discover, and learn about plants in a more practical and enjoyable way"
+msgstr "يوفر بلانتير أدوات حديثة تساعد المستخدم على البحث والمقارنة والاستكشاف والتعرف على النباتات بطريقة أكثر عملية ومتعة"
 
 msgid "Find Your Perfect Plant"
 msgstr "اعثر على نبتتك المثالية"
 
-msgid "Answer a few simple questions and discover the plant that best matches"
-msgstr "أجب عن بعض الأسئلة البسيطة واكتشف النبتة الأنسب"
+msgid "Answer a few simple questions and discover the plant that best matches for you"
+msgstr "أجب عن بعض الأسئلة البسيطة واكتشف النبتة الأنسب لك"
 
 msgid "Search Plants"
 msgstr "البحث عن النباتات"
@@ -1805,8 +1802,8 @@ msgstr "ابحث عن النباتات واعرض تفاصيلها بطريقة 
 msgid "Compare Plants"
 msgstr "مقارنة النباتات"
 
-msgid "Compare two plants to understand the differences and choose the most suitable one."
-msgstr "قارن بين نبتتين لفهم الفروقات واختيار الأنسب."
+msgid "Compare two plants to understand the differences and choose the most suitable one"
+msgstr "قارن بين نبتتين لفهم الفروقات واختيار الأنسب"
 
 msgid "Upload and Identify"
 msgstr "ارفع الصورة وتعرّف"
@@ -1823,11 +1820,8 @@ msgstr "اكتشف النباتات وابحث عنها وقارن بينها و
 msgid "Coming Soon"
 msgstr "قريبًا"
 
-msgid "Smart Plant Finder"
-msgstr "الباحث الذكي عن النباتات"
-
-msgid "Answer a few simple questions and we will suggest the best plants for you."
-msgstr "أجب عن بعض الأسئلة البسيطة وسنقترح لك أفضل النباتات."
+msgid "Answer a few simple questions and we will suggest the best plants for you"
+msgstr "أجب عن بعض الأسئلة البسيطة وسنقترح لك أفضل النباتات"
 
 msgid "Light Level"
 msgstr "مستوى الإضاءة"
@@ -1868,7 +1862,6 @@ msgstr "لا يهم"
 msgid "Yes"
 msgstr "نعم"
 
-
 msgid "Room Size"
 msgstr "حجم الغرفة"
 
@@ -1893,5 +1886,75 @@ msgstr "النباتات المقترحة"
 msgid "No matching plants found"
 msgstr "لم يتم العثور على نباتات مطابقة"
 
-msgid "Try changing your answers and search again."
-msgstr "جرّب تغيير إجاباتك ثم ابحث مرة أخرى."
+msgid "Try changing your answers and search again"
+msgstr "جرّب تغيير إجاباتك ثم ابحث مرة أخرى"
+
+msgid "Smart Plant Finder"
+msgstr "الباحث الذكي عن النباتات"
+
+msgid "Describe the plant you want, and get a smart suggestion"
+msgstr "صف النبتة التي تريدها واحصل على اقتراح ذكي"
+
+msgid "Start with a simple request"
+msgstr "ابدأ بطلب بسيط"
+
+msgid "Example: I want an indoor plant with low watering"
+msgstr "مثال: أريد نبتة داخلية قليلة الري"
+
+msgid "Type your plant request here..."
+msgstr "اكتب طلبك هنا..."
+
+msgid "Indoor + low watering"
+msgstr "داخلية + قليلة الري"
+
+msgid "Edible plant"
+msgstr "نبتة صالحة للأكل"
+
+msgid "Another option"
+msgstr "خيار آخر"
+
+msgid "Send"
+msgstr "إرسال"
+
+msgid "Native Country"
+msgstr "الدولة الأصلية"
+
+msgid "Discover all plants that are originally native to this country"
+msgstr "اكتشف جميع النباتات التي تُعد أصلية في هذه الدولة"
+
+msgid "plants found"
+msgstr "نبتة موجودة"
+
+msgid "There are currently no plants linked to this country"
+msgstr "لا توجد حاليًا نباتات مرتبطة بهذه الدولة"
+
+msgid "Filter Options"
+msgstr "خيارات التصفية"
+
+msgid "Refine your plant search"
+msgstr "خصص بحثك عن النباتات"
+
+msgid "Search"
+msgstr "البحث"
+
+msgid "Search plant name"
+msgstr "ابحث باسم النبتة"
+
+msgid "All categories"
+msgstr "جميع الفئات"
+
+msgid "Country"
+msgstr "الدولة"
+
+msgid "All Countries"
+msgstr "كل الدول"
+
+msgid "Edibility"
+msgstr "قابلية الأكل"
+
+
+msgid "Not edible"
+msgstr "غير صالحة للأكل"
+
+msgid "Clear All"
+msgstr "مسح الكل"

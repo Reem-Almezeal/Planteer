@@ -9,117 +9,74 @@
 {% endblock %}
 
 {% block content %}
-<section class="find-plant-page">
-    <div class="find-bg-shape shape-one"></div>
-    <div class="find-bg-shape shape-two"></div>
-
+<section class="plant-chat-page">
     <div class="container">
 
-        <section class="find-hero reveal-up">
-            <span class="find-badge">
-                {% trans "Smart Plant Finder" %}
-            </span>
+        <div class="plant-chat-shell">
+            <div class="plant-chat-header">
+                <span class="plant-chat-badge">{% trans "Smart Plant Finder" %}</span>
+                <h1>{% trans "Find Your Perfect Plant" %}</h1>
+                <p>
+                    {% trans "Describe the plant you want, and get a smart suggestion" %}
+                </p>
+            </div>
 
-            <h1>
-                {% trans "Find Your Perfect Plant" %}
-            </h1>
+            <div class="plant-chat-body" id="plantChatBody">
+                {% if chat_history %}
+                    {% for message in chat_history %}
+                        <div class="chat-row {% if message.sender == 'user' %}user-row{% else %}bot-row{% endif %}">
+                            <div class="chat-bubble {% if message.sender == 'user' %}user-bubble{% else %}bot-bubble{% endif %}">
+                                {{ message.text|linebreaksbr }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="chat-empty-state">
+                        <div class="empty-icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3>{% trans "Start with a simple request" %}</h3>
+                        <p>
+                            {% trans "Example: I want an indoor plant with low watering" %}
+                        </p>
+                    </div>
+                {% endif %}
+            </div>
 
-            <p>
-                {% trans "Answer a few simple questions and we will suggest the best plants for you." %}
-            </p>
-        </section>
-
-        <section class="finder-card reveal-up">
-            <form method="GET" class="finder-form">
-
-                <div class="finder-group">
-                    <label for="light">{% trans "Light Level" %}</label>
-                    <select name="light" id="light">
-                        <option value="">{% trans "Choose light level" %}</option>
-                        <option value="low" {% if request.GET.light == "low" %}selected{% endif %}>{% trans "Low Light" %}</option>
-                        <option value="medium" {% if request.GET.light == "medium" %}selected{% endif %}>{% trans "Medium Light" %}</option>
-                        <option value="high" {% if request.GET.light == "high" %}selected{% endif %}>{% trans "Bright Light" %}</option>
-                    </select>
+            <form method="POST" class="plant-chat-form">
+                {% csrf_token %}
+                <div class="chat-input-wrap">
+                    <input
+                        type="text"
+                        name="message"
+                        placeholder="{% trans 'Type your plant request here...' %}"
+                        required
+                    >
+                    <button type="submit" class="send-chat-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>{% trans "Send" %}</span>
+                    </button>
                 </div>
 
-                <div class="finder-group">
-                    <label for="watering">{% trans "Watering" %}</label>
-                    <select name="watering" id="watering">
-                        <option value="">{% trans "Choose watering frequency" %}</option>
-                        <option value="low" {% if request.GET.watering == "low" %}selected{% endif %}>{% trans "Rarely" %}</option>
-                        <option value="medium" {% if request.GET.watering == "medium" %}selected{% endif %}>{% trans "Sometimes" %}</option>
-                        <option value="high" {% if request.GET.watering == "high" %}selected{% endif %}>{% trans "Frequently" %}</option>
-                    </select>
-                </div>
-
-                <div class="finder-group">
-                    <label for="edible">{% trans "Edible Plant?" %}</label>
-                    <select name="edible" id="edible">
-                        <option value="">{% trans "No preference" %}</option>
-                        <option value="yes" {% if request.GET.edible == "yes" %}selected{% endif %}>{% trans "Yes" %}</option>
-                        <option value="no" {% if request.GET.edible == "no" %}selected{% endif %}>{% trans "No" %}</option>
-                    </select>
-                </div>
-
-                <div class="finder-group">
-                    <label for="space">{% trans "Room Size" %}</label>
-                    <select name="space" id="space">
-                        <option value="">{% trans "Choose room size" %}</option>
-                        <option value="small" {% if request.GET.space == "small" %}selected{% endif %}>{% trans "Small Space" %}</option>
-                        <option value="large" {% if request.GET.space == "large" %}selected{% endif %}>{% trans "Large Space" %}</option>
-                    </select>
-                </div>
-
-                <div class="finder-actions">
-                    <button type="submit" class="find-btn">
-                        {% trans "Find My Plant" %}
+                <div class="quick-suggestions">
+                    <button type="button" class="quick-chip" onclick="fillPlantMessage('أبي نبتة داخلية قليلة الري')">
+                        {% trans "Indoor + low watering" %}
                     </button>
 
-                    <a href="{% url 'plants:find_plant' %}" class="reset-btn">
-                        {% trans "Reset" %}
-                    </a>
+                    <button type="button" class="quick-chip" onclick="fillPlantMessage('أبي نبتة صالحة للأكل')">
+                        {% trans "Edible plant" %}
+                    </button>
+
+                    <button type="button" class="quick-chip" onclick="fillPlantMessage('أبي خيار ثاني')">
+                        {% trans "Another option" %}
+                    </button>
                 </div>
             </form>
-        </section>
-
-        {% if plants %}
-        <section class="results-section reveal-up">
-            <div class="results-head">
-                <h2>{% trans "Suggested Plants" %}</h2>
-                <span>{{ plants|length }} {% trans "results" %}</span>
-            </div>
-
-            <div class="results-grid">
-                {% for plant in plants %}
-                <a href="{% url 'plants:plant_detail' plant.id %}" class="result-card">
-                    <div class="result-image-wrap">
-                        <img src="{{ plant.image.url }}" alt="{{ plant.name }}">
-                    </div>
-
-                    <div class="result-content">
-                        <div class="result-tags">
-                            <span>{{ plant.get_category_display }}</span>
-                            {% if plant.is_edible %}
-                                <span>{% trans "Edible" %}</span>
-                            {% endif %}
-                        </div>
-
-                        <h3>{{ plant.name }}</h3>
-                        <p>{{ plant.about|truncatewords:15 }}</p>
-                    </div>
-                </a>
-                {% endfor %}
-            </div>
-        </section>
-        {% elif request.GET %}
-        <section class="empty-results reveal-up">
-            <div class="empty-results-card">
-                <h2>{% trans "No matching plants found" %}</h2>
-                <p>{% trans "Try changing your answers and search again." %}</p>
-            </div>
-        </section>
-        {% endif %}
+        </div>
 
     </div>
 </section>
+
+<script src="{% static 'js/find_plant.js' %}">
+</script>
 {% endblock %}
