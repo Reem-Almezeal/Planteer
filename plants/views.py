@@ -19,8 +19,6 @@ def plants_page(request: HttpRequest):
     selected_category = request.GET.get("category", "")
     selected_country = request.GET.get("country", "")
     selected_is_edible = request.GET.get("is_edible", "")
-
-
     if search_query:
         plants = plants.filter(name__icontains=search_query)
 
@@ -36,9 +34,11 @@ def plants_page(request: HttpRequest):
         plants = plants.filter(is_edible=False)
 
     plants = plants.distinct()
+    plants_preview = plants[:6]
 
     return render(request, "plants/plants_page.html", {
-        "plants": plants,
+        "plants": plants_preview, 
+        "total_count": plants.count(),
         "categories": Plant.CategoryChoices.choices,
         "countries": Country.objects.all(),
         "search_query": search_query,
@@ -118,6 +118,8 @@ def plant_detail(request:HttpRequest, plant_id:int):
     }
 
     return render(request, 'plants/plant_detail.html', context)
+
+
 def country_plants(request: HttpRequest, country_id: int):
     country = get_object_or_404(Country, id=country_id)
 
@@ -130,12 +132,13 @@ def country_plants(request: HttpRequest, country_id: int):
         "plants": plants,
     })
 
+
 def plant_create(request:HttpRequest):
     if request.method == 'POST':
         form = PlantForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('plants_page')
+            return redirect('plants:plants_page')
     else:
         form = PlantForm()
 
@@ -152,7 +155,7 @@ def plant_update(request, plant_id:HttpRequest):
         form = PlantForm(request.POST, request.FILES, instance=plant)
         if form.is_valid():
             form.save()
-            return redirect('plant_detail', plant_id=plant.id)
+            return redirect('plants:plant_detail', plant_id=plant.id)
     else:
         form = PlantForm(instance=plant)
 
@@ -167,7 +170,7 @@ def plant_delete(request, plant_id:HttpRequest):
 
     if request.method == 'POST':
         plant.delete()
-        return redirect('plants_page')
+        return redirect('plants:plants_page')
 
     return render(request, 'plants/plant_confirm_delete.html', {
         'plant': plant

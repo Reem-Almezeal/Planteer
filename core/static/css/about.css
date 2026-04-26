@@ -154,7 +154,7 @@
     gap: 10px;
     padding: 12px 16px;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.94);
+    background: var(--surface);
     border: 1px solid rgba(115, 201, 134, 0.16);
     box-shadow: 0 16px 30px rgba(28, 39, 28, 0.12);
     font-size: 0.9rem;
@@ -294,7 +294,7 @@
     min-height: 145px;
     padding: 22px;
     border-radius: 22px;
-    background: linear-gradient(180deg, #fbfdfb 0%, #f5faf4 100%);
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
     border: 1px solid rgba(115, 201, 134, 0.14);
     display: flex;
     flex-direction: column;
@@ -403,87 +403,134 @@ html[dir="rtl"] .about-cta {
     transform: translate(0, 0);
 }
 
+/* ABOUT PAGE DARK MODE*/
 
+html.dark-mode .about-page,
+body.dark-mode .about-page,
+.dark-mode .about-page {
+    background: #0f1411 !important;
+}
+
+
+html.dark-mode .about-hero,
+html.dark-mode .about-story-card,
+html.dark-mode .about-highlight-text,
+html.dark-mode .about-highlight-stats,
+html.dark-mode .about-cta,
 body.dark-mode .about-hero,
 body.dark-mode .about-story-card,
 body.dark-mode .about-highlight-text,
-body.dark-mode .about-highlight-stats {
-    background: linear-gradient(180deg, rgba(24, 29, 25, 0.96), rgba(20, 24, 21, 0.96));
-    border: 1px solid rgba(103, 120, 107, 0.18);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+body.dark-mode .about-highlight-stats,
+body.dark-mode .about-cta,
+.dark-mode .about-hero,
+.dark-mode .about-story-card,
+.dark-mode .about-highlight-text,
+.dark-mode .about-highlight-stats,
+.dark-mode .about-cta {
+    background: linear-gradient(180deg, #171d19, #111612) !important;
+    border: 1px solid rgba(120, 150, 125, 0.18) !important;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35) !important;
 }
 
-body.dark-mode .about-hero::before {background: rgba(115, 201, 134, 0.07);
+
+html.dark-mode .about-stat-card,
+body.dark-mode .about-stat-card,
+.dark-mode .about-stat-card {
+    background: linear-gradient(180deg, #202820, #151b16) !important;
+    border: 1px solid rgba(115, 201, 134, 0.22) !important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.32) !important;
 }
 
-body.dark-mode .about-hero::after {
-    background: rgba(115, 201, 134, 0.04);
+
+html.dark-mode .floating-badge,
+body.dark-mode .floating-badge,
+.dark-mode .floating-badge {
+    background: rgba(24, 31, 26, 0.96) !important;
+    border: 1px solid rgba(115, 201, 134, 0.22) !important;
+    color: #edf3ee !important;
 }
 
-body.dark-mode .about-kicker,
-body.dark-mode .about-mini-kicker {
-    background: rgba(115, 201, 134, 0.12);
-    color: #a8ddb1;
+
+html.dark-mode .about-feature-list li,
+body.dark-mode .about-feature-list li,
+.dark-mode .about-feature-list li {
+    background: #1b231d !important;
+    border: 1px solid rgba(115, 201, 134, 0.18) !important;
+    color: #edf3ee !important;
 }
 
+
+html.dark-mode .about-hero h1,
+html.dark-mode .about-story-card h2,
+html.dark-mode .about-highlight-text h2,html.dark-mode .about-cta h2,
 body.dark-mode .about-hero h1,
 body.dark-mode .about-story-card h2,
 body.dark-mode .about-highlight-text h2,
-body.dark-mode .about-cta h2 {
-    color: #edf3ee;
+body.dark-mode .about-cta h2,
+.dark-mode .about-hero h1,
+.dark-mode .about-story-card h2,
+.dark-mode .about-highlight-text h2,
+.dark-mode .about-cta h2 {
+    color: #f2f7f3 !important;
 }
 
+html.dark-mode .about-hero p,
+html.dark-mode .about-story-card p,
+html.dark-mode .about-highlight-text p,
+html.dark-mode .about-cta p,
+html.dark-mode .about-stat-card span,
 body.dark-mode .about-hero p,
 body.dark-mode .about-story-card p,
 body.dark-mode .about-highlight-text p,
 body.dark-mode .about-cta p,
-body.dark-mode .about-stat-card span {
-    color: #aeb8af;
+body.dark-mode .about-stat-card span,
+.dark-mode .about-hero p,
+.dark-mode .about-story-card p,
+.dark-mode .about-highlight-text p,
+.dark-mode .about-cta p,
+.dark-mode .about-stat-card span {
+    color: #b8c3ba !important;
 }
 
-body.dark-mode .about-card-icon {
-    background: rgba(115, 201, 134, 0.14);
-    color: #a8ddb1;
+
+html.dark-mode .about-stat-card strong,
+html.dark-mode .about-card-icon,
+html.dark-mode .floating-badge i,
+html.dark-mode .about-feature-list li i,
+body.dark-mode .about-stat-card strong,
+body.dark-mode .about-card-icon,
+body.dark-mode .floating-badge i,
+body.dark-mode .about-feature-list li i,
+.dark-mode .about-stat-card strong,
+.dark-mode .about-card-icon,
+.dark-mode .floating-badge i,
+.dark-mode .about-feature-list li i {
+    color: #8fd89d !important;
+}
+
+body.dark-mode .about-card-icon,
+body.dark-mode .about-card-icon,
+.dark-mode .about-card-icon {
+    background: rgba(115, 201, 134, 0.14) !important;
+}
+body.dark-mode .about-stat-card {
+    background: linear-gradient(
+        180deg,
+        rgba(28, 33, 29, 0.95),
+        rgba(18, 22, 19, 0.95)
+    );
+    border: 1px solid rgba(115, 201, 134, 0.2);
 }
 
 body.dark-mode .floating-badge {
-    background: rgba(27, 33, 29, 0.94);
-    border: 1px solid rgba(103, 120, 107, 0.18);
-    color: #edf3ee;
+    background: rgba(30, 36, 32, 0.95) !important;
+    color: #ffffff !important;
 }
 
-body.dark-mode .floating-badge i {
-    color: #a8ddb1;
+body.dark-mode .floating-badge span {
+    color: #ffffff !important;
 }
 
-body.dark-mode .about-hero-image-card {
-    border-color: rgba(103, 120, 107, 0.18);
-    background: rgba(31, 38, 33, 0.95);
-}
-
-body.dark-mode .about-feature-list li {
-    background: rgba(31, 38, 33, 0.92);
-    border: 1px solid rgba(103, 120, 107, 0.18);
-    color: #edf3ee;
-}
-
-body.dark-mode .about-feature-list li i {
-    color: #a8ddb1;
-}
-
-body.dark-mode .about-stat-card {
-    background: linear-gradient(180deg, rgba(31, 38, 33, 0.95), rgba(24, 29, 25, 0.95));
-    border: 1px solid rgba(103, 120, 107, 0.16);
-}
-
-body.dark-mode .about-stat-card strong {
-    color: #a8ddb1;
-}
-
-body.dark-mode .about-cta {
-    background: linear-gradient(135deg, rgba(115, 201, 134, 0.10), rgba(115, 201, 134, 0.04));
-    border: 1px solid rgba(115, 201, 134, 0.16);
-}
 
 /* animations */
 @keyframes aboutFloatOne {

@@ -1916,8 +1916,8 @@ msgstr "خيار آخر"
 msgid "Send"
 msgstr "إرسال"
 
-msgid "Native Country"
-msgstr "الدولة الأصلية"
+msgid "The Country"
+msgstr "الدولة"
 
 msgid "Discover all plants that are originally native to this country"
 msgstr "اكتشف جميع النباتات التي تُعد أصلية في هذه الدولة"
@@ -1958,3 +1958,19 @@ msgstr "غير صالحة للأكل"
 
 msgid "Clear All"
 msgstr "مسح الكل"
+
+
+msgid "Discover the plants associated with this country"
+msgstr "اكتشف النباتات المرتبطة بهذه الدولة"
+
+
+msgid "The group of plants associated with this country"
+msgstr "مجموعة النباتات المرتبطة بهذه الدولة"
+
+
+msgid "Water Requirement"
+msgstr "متطلبات المياه"
+
+
+msgid "Citizen of the plant"
+msgstr "مواطن النبتة"

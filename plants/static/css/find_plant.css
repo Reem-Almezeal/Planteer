@@ -15,8 +15,8 @@
 
 .plant-chat-header {
     padding: 30px 28px 22px;
-    border-bottom: 1px solid var(--border);
-    background: linear-gradient(180deg, rgba(255,255,255,0.82), rgba(247,250,247,0.96));
+    border: 1px solid var(--border);
+    background: var(--surface);
 }
 
 .plant-chat-badge {
@@ -198,17 +198,18 @@
 /* dark mode */
 body.dark-mode .plant-chat-shell,
 body.dark-mode .bot-bubble {
-    background: linear-gradient(180deg, rgba(24, 29, 25, 0.94), rgba(19, 23, 20, 0.94));
-    border: 1px solid rgba(110, 125, 113, 0.16);
+    background: #18201b;
+    border: 1px solid rgba(110, 125, 113, 0.22);
 }
 
 body.dark-mode .plant-chat-header,
-body.dark-mode .plant-chat-form {background: rgba(255,255,255,0.02);
-    border-color: rgba(110, 125, 113, 0.16);
+body.dark-mode .plant-chat-form {
+    background: #1c241f;
+    border-color: rgba(110, 125, 113, 0.22);
 }
 
 body.dark-mode .plant-chat-body {
-    background: rgba(255,255,255,0.03);
+    background: #141a16;
 }
 
 body.dark-mode .plant-chat-header h1,
@@ -224,14 +225,23 @@ body.dark-mode .chat-empty-state p {
 
 body.dark-mode .chat-input-wrap input,
 body.dark-mode .quick-chip {
-    background: rgba(255,255,255,0.04);
-    border-color: rgba(110, 125, 113, 0.16);
+    background: #202923;
+    border-color: rgba(110, 125, 113, 0.22);
     color: #edf3ee;
 }
 
+body.dark-mode .chat-input-wrap input::placeholder {
+    color: #aab4ad;
+}
+
 body.dark-mode .quick-chip:hover {
-    background: rgba(93, 163, 105, 0.10);
+    background: rgba(93, 163, 105, 0.14);
     color: #a8ddb1;
+}
+
+body.dark-mode .empty-icon {
+    background: rgba(93, 163, 105, 0.14);
+    color: #8fce98;
 }
 
 /* responsive */
