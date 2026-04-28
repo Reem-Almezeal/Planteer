@@ -68,6 +68,7 @@ Pages included:
                     <span></span>
                     <span></span>
                 </button>
+                
 
                 <div class="collapse navbar-collapse" id="mainNav">
 
@@ -122,11 +123,57 @@ Pages included:
                         <button id="theme-toggle" class="mini-btn" type="button">
                             <i class="bi bi-moon-stars-fill"></i>
                         </button>
+                        <button class="mini-btn account-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle"></i>
+                        </button>
+
+                        <ul class="dropdown-menu account-menu">
+                            {% if user.is_authenticated %}
+                                <li>
+                                    <span class="dropdown-item-text account-user">
+                                        {{ user.username }}
+                                    </span>
+                                </li>
+
+                                <li><hr class="dropdown-divider"></li>
+
+                                <li>
+                                <form method="POST" action="{% url 'logout' %}">
+                                    {% csrf_token %}
+                                    <button type="submit" class="dropdown-item account-logout">
+                                        {% trans "Logout" %}
+                                    </button>
+                                </form>
+                                </li>
+                            {% else %}
+                                <li>
+                                    <a class="dropdown-item" href="{% url 'login' %}">
+                                        {% trans "Login" %}
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="{% url 'core:register' %}">
+                                        {% trans "Register" %}
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+    {% if messages %}
+    <div class="messages-wrapper">
+        {% for message in messages %}
+            <div class="site-message {{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 
     <main class="site-main">
         {% block content %}

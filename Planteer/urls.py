@@ -32,6 +32,8 @@ urlpatterns = [
     path('ar/plants/', include('plants.urls')),
     path('', include('core.urls')),
     path('plants/', include('plants.urls')),
+    path("accounts/", include("django.contrib.auth.urls")),
+    
 ]
 
 if settings.DEBUG:

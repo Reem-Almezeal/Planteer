@@ -49,4 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
             offset: 40
         });
     }
+    setTimeout(() => {
+    const msg = document.querySelector(".site-message");
+    if (msg) {
+        msg.style.opacity = "0";
+        setTimeout(() => msg.remove(), 400);
+    }
+}, 3000);
 });

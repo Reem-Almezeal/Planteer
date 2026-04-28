@@ -1671,9 +1671,6 @@ msgstr "الاسم الأول"
 msgid "Last Name"
 msgstr "اسم العائلة"
 
-msgid "Email"
-msgstr "البريد الإلكتروني"
-
 msgid "Message"
 msgstr "الرسالة"
 
@@ -1974,3 +1971,55 @@ msgstr "متطلبات المياه"
 
 msgid "Citizen of the plant"
 msgstr "مواطن النبتة"
+
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+msgid "Welcome Back"
+msgstr "مرحبًا بعودتك"
+
+msgid "Login to continue exploring Planteer"
+msgstr "سجل دخولك لمتابعةاستكشاف بلانتير"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "Confirm Password"
+msgstr "تأكيد كلمة المرور"
+
+msgid "Create Account"
+msgstr "إنشاء حساب"
+
+msgid "Don't have an account?"
+msgstr "ليس لديك حساب؟"
+
+msgid "Already have an account?"
+msgstr "لديك حساب بالفعل؟"
+
+msgid "Register"
+msgstr "إنشاء حساب"
+
+msgid "Please login to add a comment"
+msgstr "يرجى تسجيل الدخول لإضافة تعليق"
+
+msgid "Logout"
+msgstr "تسجيل الخروج"
+
+msgid "You have been logged out successfully."
+msgstr "تم تسجيل الخروج بنجاح"
+
+
+msgid "The two password fields didn’t match."
+msgstr "كلمتا المرور غير متطابقتين"
+
+msgid "This password is too short."
+msgstr "كلمة المرور قصيرة جدًا"
+
+msgid "You must login to add a comment"
+msgstr "يجب تسجيل الدخول لإضافة تعليق"

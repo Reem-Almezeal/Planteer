@@ -31,5 +31,5 @@ class PlantAdmin(admin.ModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ("name", "plant", "created_at")
-    search_fields = ("name", "content")
+    list_display = ("user", "plant", "created_at")
+    search_fields = ("user__username", "content")

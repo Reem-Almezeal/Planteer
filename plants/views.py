@@ -4,12 +4,8 @@ from .models import Plant, Comment, Country
 from django.core.paginator import Paginator
 from .forms import PlantForm
 from django.db.models import Q
+from django.contrib.admin.views.decorators import staff_member_required
 
-
-
-from django.shortcuts import render
-from django.http import HttpRequest
-from .models import Plant, Country
 
 
 def plants_page(request: HttpRequest):
@@ -90,20 +86,21 @@ def view_plants(request: HttpRequest):
     })
 
 
-def plant_detail(request:HttpRequest, plant_id:int):
+def plant_detail(request: HttpRequest, plant_id: int):
     plant = get_object_or_404(Plant, id=plant_id)
 
     if request.method == "POST":
-        name = request.POST.get("name")
-        content = request.POST.get("content")
+        if request.user.is_authenticated:
+            content = request.POST.get("content")
 
-        if name and content:
-            Comment.objects.create(
-                plant=plant,
-                name=name,
-                content=content
-            )
-            return redirect('plant_detail', plant_id=plant.id)
+            if content:
+                Comment.objects.create(
+                    plant=plant,
+                    user=request.user,
+                    content=content
+                )
+
+        return redirect('plants:plant_detail', plant_id=plant.id)
 
     related_plants = Plant.objects.filter(
         category=plant.category
@@ -132,7 +129,7 @@ def country_plants(request: HttpRequest, country_id: int):
         "plants": plants,
     })
 
-
+@staff_member_required
 def plant_create(request:HttpRequest):
     if request.method == 'POST':
         form = PlantForm(request.POST, request.FILES)
@@ -147,7 +144,7 @@ def plant_create(request:HttpRequest):
         'page_title': 'Add New Plant'
     })
 
-
+@staff_member_required
 def plant_update(request, plant_id:HttpRequest):
     plant = get_object_or_404(Plant, id=plant_id)
 
@@ -164,7 +161,7 @@ def plant_update(request, plant_id:HttpRequest):
         'page_title': 'Update Plant'
     })
 
-
+@staff_member_required
 def plant_delete(request, plant_id:HttpRequest):
     plant = get_object_or_404(Plant, id=plant_id)
 

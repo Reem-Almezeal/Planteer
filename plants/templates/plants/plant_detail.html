@@ -136,22 +136,28 @@
 
         <section class="comments-section">
             <h3>{% trans "Comments" %}</h3>
-
+            {% if user.is_authenticated %}
             <form method="POST" class="comment-form">
                 {% csrf_token %}
-                <input type="text" name="name" placeholder="{% trans 'Your name' %}" required>
                 <textarea name="content" rows="4" placeholder="{% trans 'Write your comment...' %}" required></textarea>
 
                 <button type="submit" class="add-comment-btn">
                     {% trans "Add Comment" %}
                 </button>
             </form>
+            {% else %}
+            <p>
+                {% trans "You must login to add a comment" %}
+                <a href="{% url 'login' %}">{% trans "Login" %}</a>
+            </p>
+    
+            {% endif %}
 
             <div class="comments-list">
                 {% for comment in comments %}
                 <div class="comment-card">
                     <div class="comment-head">
-                        <strong>{{ comment.name }}</strong>
+                        <strong>{{ comment.user.username }}</strong>
                         <span>{{ comment.created_at|date:"M d, Y" }}</span>
                     </div>
                     <p>{{ comment.content }}</p>
@@ -162,7 +168,7 @@
             </div>
         </section>
 
-        <section class="related-plants-section">
+        <section classق="related-plants-section">
             <div class="related-plants-head">
                 <h3>{% trans "Related Plants" %}</h3>
                 <p>{% trans "Discover more plants from the same category" %}</p>

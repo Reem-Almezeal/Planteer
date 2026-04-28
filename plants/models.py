@@ -29,11 +29,13 @@ class Plant(models.Model):
     def __str__(self):
         return self.name
     
+from django.contrib.auth.models import User
+
 class Comment(models.Model):
     plant = models.ForeignKey(Plant, on_delete=models.CASCADE, related_name='comments')
-    name = models.CharField(max_length=100)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.name} - {self.plant.name}"
+        return f"{self.user.username} - {self.plant.name}"
